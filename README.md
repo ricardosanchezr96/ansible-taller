@@ -5,4 +5,3 @@ correo.yml es el playbook con las tareas para instalar y configurar el servidor 
 invcorreo es el archivo de inventario
 Hay templates para postfix, dovecot y squirrelmail
 
-Modif 1 RS
