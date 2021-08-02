@@ -1,7 +1,16 @@
-[mailserver]
-192.168.1.1
+[ubuntu]
+ubuntu-taller ansible_host=192.168.0.120 
+[centos]
+centos-taller ansible_host=192.168.0.118
+[linux:children]
+ubuntu
+centos
 
-[mailserver:vars]
-hostname=correo.ejemplo.com.uy
-domain=ejemplo.com.uy
-networks=127.0.0.0/8, 192.168.1.0/24
+
+#[mailserver]
+#192.168.0.118
+
+#[mailserver:vars]
+#hostname=correo.ejemplo.com.uy
+#domain=ejemplo.com.uy
+#networks=127.0.0.0/8, 192.168.0.118/24
